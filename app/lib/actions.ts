@@ -31,10 +31,16 @@ export const addSubscriberAction = async (formData: FormData) => {
       success: true,
       message: "You're on the list! We'll keep you updated.",
     };
-  } catch (e: any) {
+  } catch (e: unknown) {
+    let message = "An unexpected error occurred.";
+
+    if (e instanceof Error) {
+      message = e.message;
+    }
+
     return {
       success: false,
-      message: e.message || "An unexpected error occurred.",
+      message,
     };
   }
 };
