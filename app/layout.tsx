@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Armor Path - Coming Soon",
   description:
     "Forge your path and crush the convoy in Armor Path, the new tower defense game. Sign up to get notified on launch!",
+  icons: {
+    icon: "/armorpath.png", // <-- public/ not included
+  },
 };
 
 export default function RootLayout({
