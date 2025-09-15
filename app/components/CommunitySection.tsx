@@ -1,4 +1,4 @@
-import { FaDiscord, FaTiktok } from "react-icons/fa";
+import { FaDiscord, FaTiktok, FaYoutube } from "react-icons/fa";
 
 export default function CommunitySection() {
   return (
@@ -16,6 +16,12 @@ export default function CommunitySection() {
           aria-label="Join our Discord"
         >
           <FaDiscord className="text-4xl text-[#5865F2] hover:opacity-80 transition-opacity duration-200" />
+        </a>
+        <a
+          href="https://youtube.com/@armorpath?si=YtsovUtg0P48HMgl" // <-- Update with your real Discord link
+          aria-label="Join our Discord"
+        >
+          <FaYoutube className="text-4xl text-[#f00] hover:opacity-80 transition-opacity duration-200" />
         </a>
 
         {/* TikTok Icon with brand color */}
